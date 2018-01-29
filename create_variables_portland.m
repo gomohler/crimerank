@@ -160,19 +160,6 @@ save(strcat(word,'Xtest_on.mat'),'Xtest_on','-v7.3');
 save(strcat(word,'Ytest_on.mat'),'Ytest_on','-v7.3');
 save(strcat(word,'celltest_loc_on.mat'),'celltest_loc_on','-v7.3');
 
-Nboxes=112;
-Area=382.567144*1000*1000;
-cell_area=112*76.2^2;
-[PAI, Ncrimesoff,yoff,top_locations]=PAI_error_off(Ytest_on,S,Nboxes,celltest_loc_on,total_test_crime);
-PAI/(cell_area/Area)
 
-hold on
-plot(long,lat,'.k');
-for zz=1:112
-    plot(top_locations{zz}([1 2 3 4 1],2),top_locations{zz}([1 2 3 4 1],1),'r','LineWidth',2);
-end
-
-hold off
-drawnow;
 
 
