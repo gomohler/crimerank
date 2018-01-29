@@ -1,4 +1,5 @@
 %  Estimate CrimeRank
+addpath(genpath(pwd));
 rng(1);
 
 word='PortlandSTREET'; dt=.0005; Nleafs=100; PAIr1=86.95683693; PAIr2=83.94753617; % PAI PASDA 86.95683693 TAMERZONE 83.94753617

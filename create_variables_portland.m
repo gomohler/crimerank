@@ -1,9 +1,10 @@
+addpath(genpath(pwd));
 
 word='PortlandSTREET'; % PAI PASDA 86.95683693 TAMERZONE 83.94753617
 %word='PortlandALL'; % PAI Codilime 60.52651667	PASDA 58.80171595	TAMERZONE 59.1736587
 
-data = fopen('portland_street.csv', 'rt');
-%data = fopen('portland_all.csv', 'rt');
+data = fopen('data/portland_street.csv', 'rt');
+%data = fopen('data/portland_all.csv', 'rt');
 a = textscan(data, '%s %f %f %s', ...
       'Delimiter',',', 'HeaderLines',1);
 fclose(data);
